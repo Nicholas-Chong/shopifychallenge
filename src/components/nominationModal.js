@@ -54,7 +54,7 @@ class NominationModal extends React.Component {
 
   async search(query, card) {
     query = query.replace(/ /g, "+")
-    const results = await axios(`http://www.omdbapi.com/?s=${query}&type=movie&apikey=c96ee350`)
+    const results = await axios(`https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/?s=${query}&type=movie&apikey=c96ee350`)
 
     if (results.data.Response === "False") {
       this.setState({results: [<Option noresult={true}/>]})
