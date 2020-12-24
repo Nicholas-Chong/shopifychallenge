@@ -56,6 +56,14 @@ class Home extends React.Component {
             <a href="https://nicholas-chong.github.io/" target="_blank" rel="noreferrer">Personal website</a>
           </div>
         </Skylight>
+        <div class="footer">
+          <a 
+            href="https://github.com/Nicholas-Chong/shopifychallenge" 
+            target="_blank" rel="noreferrer" 
+            style={{color: "black"}}>
+            <i class="bx bxl-github bx-tada"/>
+          </a>
+        </div>
       </div>
     )
   }
