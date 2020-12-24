@@ -15,6 +15,7 @@
   box-shadow: 0px 8px 15px #669c9e;
   transition: transform .2s;
   min-height: 40px;
+  min-width: 92px;
 }
 
 .submitButton:hover {
