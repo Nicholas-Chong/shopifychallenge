@@ -1,36 +1,29 @@
-# The Challenge
+# Overview
 
-We need a webpage that can search OMDB for movies, and allow the user to save their favourite films they feel should be up for nomination. When they've selected 5 nominees they should be notified they're finished.
+This repo contains the source code for my Shopify 2020 internship challenge. The app is live at [https://nicholas-chong.github.io/shopifychallenge/]
 
-We'd like a simple to use interface that makes it easy to:
-Search OMDB and display the results (movies only)
-Add a movie from the search results to our nomination list
-View the list of films already nominated
-Remove a nominee from the nomination list
+# Challenges
 
-# Technical requirements
+Here are some of the challenges I faced (and overcame) during the development of the project.
 
-* Search results should come from OMDB's API (free API key: http://www.omdbapi.com/apikey.aspx).
-* Each search result should list at least its title, year of release and a button to nominate that film.
-* Updates to the search terms should update the result list
-* Movies in search results can be added and removed from the nomination list.
-* If a search result has already been nominated, disable its nominate button.
-* Display a banner when the user has 5 nominations.
+## Creating the UI
 
-# Extras
+The first challenge was to create a UI that was remained functional while looking good on desktops/laptops and mobile devices. I settled on a simple card-based design, in which each card represents one of the user's movie nominations, along with popups for searching and nominating a movies. For the more visual aspects of the UI, such as colours and drop shadows, I took design inspiration from the ClickUp[https://clickup.com] website. 
 
-There is a lot to be improved on here, you can polish the required features by crafting a nicer design, or improve the app by adding new features! Choose something that you feel best showcases your passion and skills.
+## Managing States/Props
 
-If you need inspiration, here are examples of what you can work on. If you work on these ideas, we recommend choosing only one or two.
+To create the Card component, I decided compose a series of other components. The general structure of the Card component is: 
 
-* Save nomination lists if the user leaves the page
-* Animations for loading, adding/deleting movies, notifications
-* Create shareable links
+Card -> SkyLight (a popup component), NominationModal (the popup content component)
 
-# Submission
+Card is the top level component that shows the user their current selection.
 
-Please submit your application via “Apply Now” and make sure you include:
+SkyLight is a popup from the library 'react-skylight'.
 
-* A link to your hosted code so we can test it (Free hosting available via: Github pages, Netlify and heroku)
-* A link to your Github repository containing the code
-* Any other notes you'd like us to consider alongside the page
+NominationModal is allows the user to search for movies and select the movie they would like to nominate.
+
+As a novice React user, I struggled to figure out a way to get the user actions in NominationModal to influence the state of Card. However, after trying various solutions (including an very ugly one with global variables) I realized that React elements could be passed to children as props. Using this React feature, I was able to inflict changes on the top level component by calling its setState() function, and initiate the associated UI changes accordingly.
+
+# Stack
+
+React, JavaScript, GitHub Pages
