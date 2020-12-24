@@ -1,0 +1,62 @@
+.submitButton {
+  background-color:rgb(98, 235, 212); 
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 20%;
+  height: 4vh;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px #669c9e;
+  transition: transform .2s;
+  min-height: 40px;
+}
+
+.submitButton:hover {
+  transform: scale(1.5);
+}
+
+.submitButtonContainer {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.banner {
+  z-index: 99;
+  padding-top: 2vh;
+  border-radius: 10px;
+  top: 0;
+  background-color: tomato;
+  position: -webkit-sticky;
+  text-align: center;
+  align-items: center;
+}
+
+.about {
+  overflow-y: auto;
+  max-height: 30vh;
+  min-height: 300px;
+}
+
+.about::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.about::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.about::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}

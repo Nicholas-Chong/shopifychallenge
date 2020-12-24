@@ -1,0 +1,82 @@
+.react-search-field-input {
+  padding: 0 !important; 
+  color: rgb(90,90,90)
+}
+
+.react-search-field > input, ::placeholder {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+
+.react-search-field {
+  border: 2px solid black !important;
+  border-radius: 3px !important;
+}
+
+.skylight-dialog {
+  border-radius: 10px !important;
+} 
+
+#results {
+  max-height: 30vh;
+  min-height: 300px;
+  overflow: scroll;
+  padding-top: 10px;
+}
+
+#results::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#results::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+#results::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white; /* should match background, can't be transparent */
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.optionCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.optionTitle {
+  min-width: 70%;
+  max-width: 70%;
+  font-weight: bold;
+}
+
+.optionTitle p, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.optionTitle p {
+  font-weight: normal;
+}
+
+.nominateButton {
+  background-color: rgb(121, 255, 233);
+  width: 20%;
+  max-width: 100px;
+  min-width: 81px;
+  height: 40px;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.nominateButton:disabled {
+  background-color: tomato;
+}
