@@ -24,6 +24,10 @@ NominationModal is allows the user to search for movies and select the movie the
 
 As a novice React user, I struggled to figure out a way to get the user actions in NominationModal to influence the state of Card. However, after trying various solutions (including an very ugly one with global variables) I realized that React elements could be passed to children as props. Using this React feature, I was able to inflict changes on the top level component by calling its setState() function, and initiate the associated UI changes accordingly.
 
+## Getting CORS to Function
+
+As per the MDN Web Docs, Cross Origin Resource Sharing (CORS) for requests made from scripts is disabled by default on most browsers. 
+
 # Stack
 
 React, JavaScript, GitHub Pages
