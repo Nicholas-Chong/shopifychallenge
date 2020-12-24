@@ -26,7 +26,7 @@ As a novice React user, I struggled to figure out a way to get the user actions 
 
 # Samples 
 
-|::|::|
+|:-------------------------:|:-------------------------:|
 |<img width="1604" src="github/homepage.png">  Homepage |  <img width="1604" src="github/nominatemovie.png"> Nominate movie popup |
 |<img width="1604" src="github/banner.png"> Banner |  <img width="1604" src="github/submit.png"> Submit popup |
 
