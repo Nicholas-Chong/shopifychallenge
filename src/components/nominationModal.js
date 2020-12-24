@@ -73,6 +73,8 @@ class NominationModal extends React.Component {
         <SearchField
           placeholder='Search for a movie'
           onEnter={(input) => this.search(input, this.props.card)}
+          onChange={(input) => this.search(input, this.props.card)}
+          onSearchClick={(input) => this.search(input, this.props.card)}
         />
         <div id="results">
           <div id="resultschild">
