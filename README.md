@@ -16,11 +16,11 @@ To create the Card component, I decided compose a series of other components. Th
 
 Card -> SkyLight (a popup component), NominationModal (the popup content component)
 
-Card is the top level component that shows the user their current selection.
+**Card** is the top level component that shows the user their current selection.
 
-SkyLight is a popup from the library 'react-skylight'.
+**SkyLight** is a popup from the library 'react-skylight'.
 
-NominationModal is allows the user to search for movies and select the movie they would like to nominate.
+**NominationModal** is allows the user to search for movies and select the movie they would like to nominate.
 
 As a novice React user, I struggled to figure out a way to get the user actions in NominationModal to influence the state of Card. However, after trying various solutions (including an very ugly one with global variables) I realized that React elements could be passed to children as props. Using this React feature, I was able to inflict changes on the top level component by calling its setState() function, and initiate the associated UI changes accordingly.
 
