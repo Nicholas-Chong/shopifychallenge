@@ -19,7 +19,7 @@ class Home extends React.Component {
       ],
       showBanner: false,
     }
-    this.modal = React.createRef()
+    this.submitModal = React.createRef()
   }
 
   render() {
@@ -39,12 +39,12 @@ class Home extends React.Component {
           {this.state.cards}
         <div class="submitButtonContainer">
           <button 
-            onClick={() => this.modal.current.show()}
+            onClick={() => this.submitModal.current.show()}
             class="submitButton">Submit</button>
         </div>
         <Skylight
           hideOnOverlayClicked 
-          ref={this.modal} 
+          ref={this.submitModal} 
           title={message}>
           <div class="about">
             <p>Currently, ths submit button does not actually do anything, but in a real application, this would be the point where a PUT request with the JSON stringified data would be sent to a server. The data would then be parsed added to a database of some sort.</p>

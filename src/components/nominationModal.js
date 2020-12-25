@@ -5,6 +5,14 @@ import '../css/modal.css'
 import {selected} from '../views/home'
 
 class Option extends React.Component {
+  /**
+   * Nominate
+   * 
+   * Adds an IMDB ID to the list of selected movies. Hides the popup. Resets
+   * the search results area. Sets state of corresponding card to 
+   * hasNomination = true. Checks number of nominated movies and displays 
+   * banner if greater than 5.
+   */
   nominate() {
     selected.push(this.props.imdb)
     this.props.card.modal.current.hide()
@@ -44,6 +52,7 @@ class Option extends React.Component {
   }
 }
 
+
 class NominationModal extends React.Component {
   constructor(props) {
     super(props)
@@ -52,6 +61,16 @@ class NominationModal extends React.Component {
     }
   }
 
+  /**
+   * Search
+   * 
+   * Sends a request to OMBD API to search for the user's input query. Parses 
+   * respose and generates Option components. Re-renders nomination modal via
+   * this.setState().
+   * 
+   * @param {*} query 
+   * @param {*} card 
+   */
   async search(query, card) {
     query = query.replace(/ /g, "+")
     const results = await axios(`https://www.omdbapi.com/?s=${query}&type=movie&apikey=c96ee350`)
@@ -74,8 +93,7 @@ class NominationModal extends React.Component {
           placeholder='Search for a movie'
           onEnter={(input) => this.search(input, this.props.card)}
           onChange={(input) => this.search(input, this.props.card)}
-          onSearchClick={(input) => this.search(input, this.props.card)}
-        />
+          onSearchClick={(input) => this.search(input, this.props.card)}/>
         <div id="results">
           <div id="resultschild">
             {this.state.results}

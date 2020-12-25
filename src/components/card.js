@@ -17,10 +17,13 @@ class Card extends React.Component {
     this.modal = React.createRef()
   }
 
-  newNomination() {
-    this.setState({hasNomination: true})
-  }
-
+  /**
+   * Reset
+   * 
+   * Resets the card to its default state. Removes the nomination IMDB ID from 
+   * the list of nominated IDs. Checks to see if the num of nominations is 
+   * greater/less than 5 and displays the banner accordingly.
+   */
   reset() {
     const position = selected.indexOf(this.state.imdbID)
     selected.splice(position, 1)
