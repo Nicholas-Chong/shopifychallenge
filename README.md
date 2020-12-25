@@ -8,7 +8,7 @@ Here are some of the challenges I faced (and overcame) during the development of
 
 ## Creating the UI
 
-The first challenge was to create a UI that was remained functional while looking good on desktops/laptops and mobile devices. I settled on a simple card-based design, in which each card represents one of the user's movie nominations, along with popups for searching and nominating movies. For the more visual aspects of the UI, such as colours and drop shadows, I took design inspiration from the [ClickUp](https://clickup.com) website. 
+The first challenge was to create a UI that was remained functional while looking good on desktops/laptops and mobile devices. I settled on a simple card-based design, in which each card represents one of the user's movie nominations, along with popups for searching and nominating movies. For the more "artsy" aspects of the UI, such as colours and drop shadows, I took design inspiration from the [ClickUp](https://clickup.com) website. 
 
 ## Managing States/Props
 
