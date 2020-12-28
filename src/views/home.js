@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../components/card'
 import Skylight from 'react-skylight'
 import '../css/home.css'
+import cogoToast from 'cogo-toast';
 
 // Global var selected to hold selected movie IDs
 export var selected = []
@@ -23,17 +24,16 @@ class Home extends React.Component {
   }
 
   render() {
-    var message
     if (this.state.showBanner === false) {
-      message = "Please select 5 movies first!"
+      var message = "Please select 5 movies first!"
+      if (this.banner) { this.banner.hide() }
     } else {
       message = "Thank You!"
+      this.banner = cogoToast.info("You have selected 5 movies!", {hideAfter: 0})
     }
+
     return (
       <div>
-        {this.state.showBanner === true &&
-          <div class="banner"><h3>You have selected your 5 movies! Scroll down and click submit!</h3></div>
-        }
         <h1 class="title">The Shoppies</h1>
         <h3>Nominate your top 5 movies for a Shoppie award!</h3>
           {this.state.cards}
