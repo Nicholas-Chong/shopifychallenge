@@ -47,7 +47,7 @@ class Home extends React.Component {
           ref={this.submitModal} 
           title={message}>
           <div class="about">
-            <p>Currently, ths submit button does not actually do anything, but in a real application, this would be the point where a PUT request with the JSON stringified data would be sent to a server. The data would then be parsed added to a database of some sort.</p>
+            <p>Currently, ths submit button does not actually do anything, but in a real application, this would be the point where a PUT request with the JSON stringified data would be sent to a server. The data would then be parsed and added to a database of some sort.</p>
             <h2>About</h2>
             <p>This simple web app is built with React. Almost all components were made from scratch, and make use of numerous React states and props.</p>
             <a href="https://github.com/Nicholas-Chong/shopifychallenge">Check out the source code on GitHub</a>
