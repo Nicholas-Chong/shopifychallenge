@@ -19,10 +19,12 @@ class Option extends React.Component {
     
     localStorage.setItem(
       `nomi${this.props.card.props.num}`, 
-      JSON.stringify({nominatedMovie: this.props.title,
-      imdbID: this.props.imdb,
-      release: this.props.release,
-    }))
+      JSON.stringify({
+        nominatedMovie: this.props.title,
+        imdbID: this.props.imdb,
+        release: this.props.release,
+      })
+    )
 
     this.props.card.modal.current.hide()
 
@@ -67,9 +69,7 @@ class Option extends React.Component {
 class NominationModal extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      results: []
-    }
+    this.state = {results: []}
   }
 
   /**
@@ -92,7 +92,7 @@ class NominationModal extends React.Component {
       var tableRows = []
       results.data.Search.forEach(element => {
         tableRows.push(<Option nomi={this} card={card} title={element.Title} imdb={element.imdbID} release={element.Year}/>)
-      });
+      })
       this.setState({results: tableRows})
     }
   }
