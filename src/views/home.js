@@ -5,7 +5,11 @@ import '../css/home.css'
 import cogoToast from 'cogo-toast';
 
 // Global var selected to hold selected movie IDs
-export var selected = []
+export var selected = localStorage.getItem('selected') ? JSON.parse(localStorage.getItem('selected')) : []
+
+if (localStorage.getItem("selected")) {
+  if (JSON.parse(localStorage.getItem("selected")).length > 0) { cogoToast.info("Movies loaded from storage") }
+}
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,7 +22,7 @@ class Home extends React.Component {
         <Card num="4" home={this}/>,
         <Card num="5" home={this}/>,
       ],
-      showBanner: false,
+      showBanner: selected.length === 5 ? true : false,
     }
     this.submitModal = React.createRef()
   }

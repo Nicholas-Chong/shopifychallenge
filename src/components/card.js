@@ -8,11 +8,11 @@ class Card extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      hasNomination: false,
-      nominatedMovie: "",
+      hasNomination: localStorage.getItem(`nomi${props.num}`) ? true : false,
+      nominatedMovie: localStorage.getItem(`nomi${props.num}`) ? JSON.parse(localStorage.getItem(`nomi${props.num}`)).nominatedMovie : "",
       rank: props.num,
-      imdbID: -1,
-      release:-1,
+      imdbID: localStorage.getItem(`nomi${props.num}`) ? JSON.parse(localStorage.getItem(`nomi${props.num}`)).imdbID : -1,
+      release: localStorage.getItem(`nomi${props.num}`) ? JSON.parse(localStorage.getItem(`nomi${props.num}`)).release : -1,
     }
     this.modal = React.createRef()
   }
@@ -27,6 +27,10 @@ class Card extends React.Component {
   reset() {
     const position = selected.indexOf(this.state.imdbID)
     selected.splice(position, 1)
+
+    localStorage.setItem("selected", JSON.stringify(selected))
+    localStorage.removeItem(`nomi${this.props.num}`)
+    
     this.setState({hasNomination: false})
     if (selected.length < 5) {this.props.home.setState({showBanner: false})}
   }

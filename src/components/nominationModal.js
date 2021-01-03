@@ -15,7 +15,17 @@ class Option extends React.Component {
    */
   nominate() {
     selected.push(this.props.imdb)
+    localStorage.setItem('selected', JSON.stringify(selected))
+    
+    localStorage.setItem(
+      `nomi${this.props.card.props.num}`, 
+      JSON.stringify({nominatedMovie: this.props.title,
+      imdbID: this.props.imdb,
+      release: this.props.release,
+    }))
+
     this.props.card.modal.current.hide()
+
     this.props.nomi.setState({results: []})
     this.props.card.setState({
       hasNomination: true,
@@ -23,6 +33,7 @@ class Option extends React.Component {
       imdbID: this.props.imdb,
       release: this.props.release,
     })
+
     if (selected.length === 5) {
       this.props.card.props.home.setState({showBanner: true})
     }
