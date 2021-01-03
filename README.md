@@ -2,6 +2,13 @@
 
 This repo contains the source code for my Shopify 2020 internship challenge. The app is live at https://nicholas-chong.github.io/shopifychallenge/
 
+# Features
+
+* Simple, modern user interface
+* Notification banners
+* Animated popups for seraching OMDB and nominating movies
+* Loads past selections from localStorage
+
 # Challenges
 
 Here are some of the challenges I faced (and overcame) during the development of the project.
@@ -34,4 +41,4 @@ As a novice React user, I struggled to figure out a way to get the user actions 
 
 # Stack
 
-React, JavaScript, GitHub Pages
+React, JavaScript, GitHub Pages, OMDB api
