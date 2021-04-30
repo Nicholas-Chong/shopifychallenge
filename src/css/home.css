@@ -44,7 +44,6 @@
 
 .about {
   overflow-y: auto;
-  max-height: 30vh;
   min-height: 300px;
 }
 

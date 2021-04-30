@@ -19,8 +19,6 @@
 } 
 
 #results {
-  max-height: 30vh;
-  min-height: 300px;
   overflow: scroll;
   padding-top: 10px;
 }
@@ -42,12 +40,11 @@
 .optionCard {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
 .optionTitle {
-  min-width: 70%;
-  max-width: 70%;
   font-weight: bold;
 }
 
@@ -73,7 +70,6 @@
   display: inline-block;
   font-size: 15px;
   border-radius: 10px;
-  margin: auto;
   cursor: pointer;
 }
 
