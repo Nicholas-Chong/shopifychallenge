@@ -1,6 +1,6 @@
 # Overview
 
-This repo contains the source code for my Shopify 2020 internship challenge. The app is live at https://nicholas-chong.github.io/shopifychallenge/
+This repo contains the source code for my Shopify 2021 internship challenge. The app is live at https://nicholas-chong.github.io/shopifychallenge/
 
 # Features
 
@@ -8,6 +8,14 @@ This repo contains the source code for my Shopify 2020 internship challenge. The
 * Notification banners
 * Animated popups for seraching OMDB and nominating movies
 * Loads past selections from localStorage
+
+# My Other Projects
+
+Take a look at some of my other projects which showcase my full-stack dev skills!
+
+* [Ontario COVID-19 headless REST API Service](https://github.com/Nicholas-Chong/covid-data-api)
+* [Ontario COVID-19 React dashboard (7500+ users)](https://github.com/Nicholas-Chong/covid-dashboard-v2)
+* [Personal Website](https://nicholas-chong.github.io/)
 
 # Challenges
 
