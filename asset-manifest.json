@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shopifychallenge/static/css/main.9bc7b61c.chunk.css",
-    "main.js": "/shopifychallenge/static/js/main.9a76640d.chunk.js",
-    "main.js.map": "/shopifychallenge/static/js/main.9a76640d.chunk.js.map",
-    "runtime-main.js": "/shopifychallenge/static/js/runtime-main.04a381a8.js",
-    "runtime-main.js.map": "/shopifychallenge/static/js/runtime-main.04a381a8.js.map",
-    "static/js/2.6f35cdb8.chunk.js": "/shopifychallenge/static/js/2.6f35cdb8.chunk.js",
-    "static/js/2.6f35cdb8.chunk.js.map": "/shopifychallenge/static/js/2.6f35cdb8.chunk.js.map",
-    "static/js/3.720da4bf.chunk.js": "/shopifychallenge/static/js/3.720da4bf.chunk.js",
-    "static/js/3.720da4bf.chunk.js.map": "/shopifychallenge/static/js/3.720da4bf.chunk.js.map",
+    "main.css": "/shopifychallenge/static/css/main.b10ae519.chunk.css",
+    "main.js": "/shopifychallenge/static/js/main.b4b3d82b.chunk.js",
+    "main.js.map": "/shopifychallenge/static/js/main.b4b3d82b.chunk.js.map",
+    "runtime-main.js": "/shopifychallenge/static/js/runtime-main.177a5d4c.js",
+    "runtime-main.js.map": "/shopifychallenge/static/js/runtime-main.177a5d4c.js.map",
+    "static/js/2.2cdce9fe.chunk.js": "/shopifychallenge/static/js/2.2cdce9fe.chunk.js",
+    "static/js/2.2cdce9fe.chunk.js.map": "/shopifychallenge/static/js/2.2cdce9fe.chunk.js.map",
+    "static/js/3.c43d0ae5.chunk.js": "/shopifychallenge/static/js/3.c43d0ae5.chunk.js",
+    "static/js/3.c43d0ae5.chunk.js.map": "/shopifychallenge/static/js/3.c43d0ae5.chunk.js.map",
     "index.html": "/shopifychallenge/index.html",
-    "static/css/main.9bc7b61c.chunk.css.map": "/shopifychallenge/static/css/main.9bc7b61c.chunk.css.map",
-    "static/js/2.6f35cdb8.chunk.js.LICENSE.txt": "/shopifychallenge/static/js/2.6f35cdb8.chunk.js.LICENSE.txt"
+    "static/css/main.b10ae519.chunk.css.map": "/shopifychallenge/static/css/main.b10ae519.chunk.css.map",
+    "static/js/2.2cdce9fe.chunk.js.LICENSE.txt": "/shopifychallenge/static/js/2.2cdce9fe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.04a381a8.js",
-    "static/js/2.6f35cdb8.chunk.js",
-    "static/css/main.9bc7b61c.chunk.css",
-    "static/js/main.9a76640d.chunk.js"
+    "static/js/runtime-main.177a5d4c.js",
+    "static/js/2.2cdce9fe.chunk.js",
+    "static/css/main.b10ae519.chunk.css",
+    "static/js/main.b4b3d82b.chunk.js"
   ]
 }
