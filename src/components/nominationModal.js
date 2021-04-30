@@ -26,7 +26,7 @@ class Option extends React.Component {
       })
     )
 
-    this.props.card.modal.current.hide()
+    this.props.card.modal.current.closeModal()
 
     this.props.nomi.setState({results: []})
     this.props.card.setState({

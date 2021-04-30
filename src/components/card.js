@@ -1,5 +1,5 @@
 import React from 'react'
-import Skylight from 'react-skylight'
+import Modal from './custom-modal'
 import NominationModal from './nominationModal'
 import '../css/card.css'
 import {selected} from '../views/home'
@@ -42,7 +42,7 @@ class Card extends React.Component {
           <div class="cardnum">
             <h1>{this.props.num}</h1>
           </div>
-          <div class="detail" onClick={() => this.modal.current.show()} >
+          <div class="detail" onClick={() => this.modal.current.openModal()} >
             <h2>Click here to nominate your no.{this.props.num} movie</h2>
             <p></p>
             <p></p>
@@ -50,14 +50,13 @@ class Card extends React.Component {
           <div class="trashButton" style={{visibility: 'hidden'}} onClick={this.reset.bind(this)}>
             <i class='bx bxs-trash' ></i>
           </div>
-          <div class='modal'>
-            <Skylight 
-              hideOnOverlayClicked 
-              ref={this.modal} 
-              title={`Nominate your no.${this.props.num} movie`}>
-              <NominationModal card={this}/>
-            </Skylight>
-          </div>
+          <Modal 
+            opacity={0.1}
+            ref={this.modal}
+            id={`modal_${this.props.num}`} 
+            name={`Nominate your no.${this.props.num} movie`}>
+            <NominationModal card={this}/>
+          </Modal>
         </div>
       )
     }
@@ -76,14 +75,12 @@ class Card extends React.Component {
           <div class="trashButton" onClick={this.reset.bind(this)}>
             <i class='bx bxs-trash' ></i>
           </div>
-          <div class='modal'>
-            <Skylight 
-              hideOnOverlayClicked 
-              ref={this.modal} 
-              title={`Nominate your no.${this.props.num} movie`}>
-              <NominationModal card={this}/>
-            </Skylight>
-          </div>
+          <Modal 
+            opacity={0.1}
+            ref={this.modal} 
+            name={`Nominate your no.${this.props.num} movie`}>
+            <NominationModal card={this}/>
+          </Modal>
         </div>
       )
     }
