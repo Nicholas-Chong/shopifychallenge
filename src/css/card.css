@@ -8,6 +8,7 @@
   min-height: 50px;
   padding: 10px;
   position: relative;
+  z-index: inherit;
 }
 
 .cardnum {
@@ -49,7 +50,6 @@
   margin-bottom: 20px;
   font-size: large;
   cursor: pointer;
-  z-index: 99;
 }
 
 .trashButton:hover {
