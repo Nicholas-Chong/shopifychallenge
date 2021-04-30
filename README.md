@@ -13,8 +13,8 @@ This repo contains the source code for my Shopify 2021 internship challenge. The
 
 Take a look at some of my other projects which showcase my full-stack dev skills!
 
-* [Ontario COVID-19 headless REST API Service](https://github.com/Nicholas-Chong/covid-data-api)
-* [Ontario COVID-19 React dashboard (7500+ users)](https://github.com/Nicholas-Chong/covid-dashboard-v2)
+* [Ontario COVID-19 headless REST API Service (Python, Django)](https://github.com/Nicholas-Chong/covid-data-api)
+* [Ontario COVID-19 dashboard (7500+ users, React, Netlify CI/CD)](https://github.com/Nicholas-Chong/covid-dashboard-v2)
 * [Personal Website](https://nicholas-chong.github.io/)
 
 # Samples 
